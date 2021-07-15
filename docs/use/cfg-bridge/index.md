@@ -12,11 +12,11 @@ The bridge used by Centrifuge is a trusted relayer bridge. This means a set of r
 
 Want to run your own bridge? Head over to: [Running the bridge](/build/bridge/)
 ### Bridge Fees
-The CFG<>wCFG bridge relies on a set of relayers to submit transactions to Ethereum and Cent Chain about the events happening on the other chain. Because these transactions can be very costly at high gas prices the bridge must charge high enough fees that it will be able to pay for its fees even during times of very high gas prices. For this reason the fee to go from Centrifuge Chain to Ethereum is relatively high. In addition because Centrifuge Chain does not have any insight into gas prices on Ethereum there is no way to charge the actual gas spent. The bridge fees are constant and can be changed at any time by the council and are shown to you before you bridge any tokens. There are ways to improve the performance of this in future iterations (batching of transactions, signature aggregation etc.).
+The CFG<>wCFG bridge relies on a set of relayers to submit transactions to Ethereum and Cent Chain about the events happening on the other chain. Because these transactions can be very costly at high gas prices the bridge must charge high enough fees that it will be able to pay for its fees even during times of very high gas prices. For this reason the fee to go from Centrifuge Chain to Ethereum is relatively high. In addition because Centrifuge Chain does not have any insight into gas prices on Ethereum there is no way to charge the actual gas spent. The bridge fees are constant and can be changed at any time by the council and are shown to you before you bridge any tokens. There are ways to improve the performance of this in future iterations (batching of transactions, signature aggregation etc.). The fee is for the transfer from Substrate (Centrifuge) to ETH but vice versa the transfer is free.
 
 
 ### How are CFG & wCFG different?
-Each wCFG is backed by one CFG locked up in the bridge account on Centrifuge Chain when moved over to Ethereum and you can move between Ethereum and Centrifuge at any time without any restrictions.
+* Each wCFG is backed by one CFG locked up in the bridge account on Centrifuge Chain when moved over to Ethereum and you can move between Ethereum and Centrifuge at any time without any restrictions.
 
 Using **CFG** on Centrifuge Chain allows you to:
 * Stake and earn staking rewards
@@ -27,8 +27,12 @@ Using **wCFG** on Ethereum allows you:
 * To interact with DeFi apps that support ERC20 tokens
 * Use it within Ethereum and hold it in your Ethereum wallet.
 
+Benefits of wCFG
+* wCFG lets users participate in other ETH based DeFi protocols, participate in yield farming and provide liquidity in pools and DEXes.
+* Wrapped tokens increase interoperability between different blockchains – the underlying tokens can, in essence, go cross-chain.
+
 ## Using the bridge
-A hosted bridge UI is available at https://bridge.centrifuge.io Navigate over there and you will be presented with two options: **Get CFG** to move ERC20 wCFG to Centrifuge Chain and **Get wCFG** to move native CFG to Ethereum. Select which one you would like to do and the UI will ask you to connect your wallet (either via Metamask for Ethereum or the Polkadot.js Browser Extension).
+A hosted bridge UI is available at https://bridge.centrifuge.io Navigate over there and you will be presented with two options: **Get CFG** to move ERC20 wCFG to Centrifuge Chain and **Get wCFG** to move native CFG to Ethereum. Select which one you would like to do and the UI will ask you to connect your wallet (either via Metamask for Ethereum or the Polkadot.js Browser Extension). It should take around 10 minutes to work.
 
 ![Select direction](./images/bridge_select_direction.png)
 
